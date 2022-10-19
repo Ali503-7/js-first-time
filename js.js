@@ -15,7 +15,7 @@ form.onsubmit = function (e) {
     for (let i = 0; i < numb.value; i++) {
       let divo = document.createElement(selec.value)
       result.appendChild(divo)
-      let iner = document.createTextNode(txet.value)
+      let iner = document.createTextNode(`${i}- ${txet.value}`)
       divo.appendChild(iner)
       divo.className = "box"
       divo.title = "Element"
